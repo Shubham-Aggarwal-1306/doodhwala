@@ -1,0 +1,114 @@
+:root {
+  --primary: #352429;
+  --secondary: #452e35;
+  --tertiary: #634850;
+  --text: #000000;
+  --textLight: #ffffff;
+  --textGray: #a9a9a9;
+  --button: #5541d7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.heading {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #11142d;
+}
+
+.header__button button {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--button);
+  border-radius: 8px;
+  color: var(--textLight);
+  padding: 0.625rem 1.5rem;
+}
+
+.header__button button span {
+  margin-left: 1.5rem;
+}
+
+.table {
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.action__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.action__button--group {
+  display: flex;
+  align-items: center;
+}
+
+.action__button--group .green button{
+  margin-right: 1rem;
+  color: green;
+  border: 2px solid green;
+}
+
+.action__button--group .red button{
+  margin-right: 1rem;
+  color: red;
+  border: 2px solid red;
+}
+
+.action__button button {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.625rem 1rem;
+  color: #5541d7;
+  border: 2px solid #5541d7;
+  border-radius: 8px;
+}
+
+.ant-table-pagination {
+  margin-right: 1rem!important;
+}

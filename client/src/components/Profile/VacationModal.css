@@ -1,0 +1,245 @@
+.vacation-modal {
+  width: 45vw;
+  margin: -1.5vh -2.2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.vacation-modal__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1rem 5.125rem 0.5rem 5.125rem;
+  border-bottom: 2px solid #000000;
+}
+
+.vacation-modal__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5.125rem 0 5.125rem;
+}
+
+.vacation-modal__form--order {
+  width: 80%;
+  padding: 3% 0;
+}
+
+.vacation-modal__form--sub {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.vacation-modal__form--sub--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding-top: 1%;
+}
+
+.vacation-modal__form--sub--details {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1%;
+  width: 70%;
+}
+
+.vacation-modal__form--sub--details--item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: left;
+}
+
+.vacation-modal__form--sub--details--item--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+}
+
+.vacation-modal__form--sub--details--item--value {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: grey;
+  line-height: 2.5rem;
+  padding-left: 10%;
+}
+
+.vacation-modal__form--vacation--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+.vacation-modal__form--vacation--details {
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0;
+}
+
+.vacation-modal__form--vacation--details--item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.vacation-modal__form--vacation--details--item--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.vacation-modal__form--vacation--details--item--value--input {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.react-date-picker__wrapper {
+  border: none !important;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 7% 35%;
+}
+
+.vacation-modal__form--vacation--submit {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+}
+
+.vacation-modal__form--vacation--submit button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--text-color-secondary);
+  background-color: var(--button-color-secondary);
+  padding: 2% 5%;
+  width: 20%;
+  border: none;
+  border-radius: 6px;
+}
+
+.vacation-modal__form--vacation--terms {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #B3B3B3;
+}
+
+.vacation-modal__form--vacation--terms--item {
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .vacation-modal {
+    width: 85vw;
+  }
+  
+  .vacation-modal__title {
+    font-size: 3rem;
+    padding: 5rem 0 1rem 2.5rem;
+    border-bottom: none;
+  }
+  
+  .vacation-modal__form {
+    padding: 0 2.5rem;
+  }
+
+  .vacation-modal__form--order {
+    width: 100%;
+    padding: 5% 0;
+  }
+
+  .vacation-modal__form--sub {
+    margin-bottom: 5%;
+  }
+  
+  .vacation-modal__form--sub--title {
+    font-size: 2.2rem;
+    padding-top: 5%;
+  }
+  
+  .vacation-modal__form--sub--details {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .vacation-modal__form--sub--details--item {
+    padding: 2% 0 0 0;
+  }
+
+  .vacation-modal__form--sub--details--item--title {
+    font-size: 2rem;
+  }
+  
+  .vacation-modal__form--sub--details--item--value {
+    font-size: 2rem;
+    padding-left: 15%;
+  }
+  
+  .vacation-modal__form--vacation {
+    margin-top: 5%;
+  }
+
+  .vacation-modal__form--vacation--title {
+    font-size: 2.3rem;
+  }
+  
+  .vacation-modal__form--vacation--details {
+    flex-direction: column;
+    padding: 2% 0;
+    width: 100%;
+  }
+  
+  .vacation-modal__form--vacation--details--item--title {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .vacation-modal__form--vacation--details--item--value--input {
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .react-date-picker__wrapper {
+    padding: 5%;
+    font-size: 2rem;
+  }
+  
+  .vacation-modal__form--vacation--submit {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vacation-modal__form--vacation--submit button {
+    font-size: 2.5rem;
+    width: 30%;
+  }
+  
+  .vacation-modal__form--vacation--terms {
+    padding: 3% 0 5% 0;
+    font-size: 1.5rem;
+  } 
+}

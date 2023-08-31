@@ -1,0 +1,23 @@
+.gallery-image {
+  margin: 1%;
+}
+.gallery-image img {
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.gallery-image img:hover {
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery-image {
+    margin: 1%;
+  }
+  .gallery-image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+}

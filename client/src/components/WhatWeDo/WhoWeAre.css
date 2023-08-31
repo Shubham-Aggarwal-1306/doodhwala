@@ -1,0 +1,54 @@
+.what-we-do__who {
+  background: url(../../Assets/HowWeDoHero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  padding: 8% 10%;
+}
+
+.what-we-do__who--content {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+}
+
+.what-we-do__who--title {
+  font-family: "ColorTube", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.8125rem;
+  color: var(--text-color-secondary);
+  padding: 2% 0;
+}
+
+.what-we-do__who--text {
+  margin-top: 1%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: var(--text-color-secondary);
+}
+
+@media screen and (max-width: 1000px) {
+  .what-we-do__who--content {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20% 0;
+  }
+
+  .what-we-do__who--title {
+    font-family: "Rubik", sans-serif;
+    font-size: 4rem;
+    padding: 10% 0;
+  }
+  
+  .what-we-do__who--text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+}

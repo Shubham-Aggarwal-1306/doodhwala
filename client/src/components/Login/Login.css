@@ -1,0 +1,70 @@
+.login__form--forgot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -2% 0 0 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1875rem;
+  line-height: 1.5625rem;
+  color: var(--text-color-blue);
+}
+
+.login__form--forgot a {
+  text-decoration: none;
+  color: var(--text-color-blue);
+}
+
+.login__form--signup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2% 0 0 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-main);
+}
+
+.login__form--signup--text {
+  margin-right: 3%;
+}
+
+.login__form--signup a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-blue);
+}
+
+
+@media  screen and (max-width: 1000px) {
+  .mainlogo img {
+    width: 30%;
+  }
+  .auth--heading {
+    font-size: 5rem;
+  }
+  .login__form--forgot {
+    margin: 3% 0 8% 0;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+  }
+
+  .login__form--signup {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .login__form--signup a {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+  
+}

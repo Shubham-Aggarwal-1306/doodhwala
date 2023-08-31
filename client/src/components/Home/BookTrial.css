@@ -1,0 +1,67 @@
+.book-trial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 10% 15% 10%;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+.book-trial__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--heading-color-secondary);
+}
+
+.book-trial__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 3%;
+  margin-top: 2%;
+  background-color: var(--button-color-secondary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.book-trial__button:active {
+  color: var(--white-color);
+  transform: scale(0.98);
+}
+
+.book-trial__button a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.book-trial__button a:hover {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .book-trial__title {
+    font-family: "Rubik", sans-serif;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    text-align: center;
+  }
+
+  .book-trial__button {
+    padding: 2% 6%;
+    margin-top: 8%;
+  }
+
+  .book-trial__button a {
+    font-size: 2.5rem;
+    line-height: 3.6875rem;
+  }
+}

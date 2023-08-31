@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&display=swap');
+@font-face {
+  font-family: "ColorTube";
+  src: url("./Assets/fonts/ColorTube.otf");
+}
+
+@font-face {
+  font-family: "Honey Silk";
+  src: url("./Assets/fonts/Honey Silk.otf");
+}
+
+:root {
+  --primary-color: #352429;
+  --secondary-color: #452E35;
+  --tertiary-color: #634850;
+  --profile-border-color: #50a8dc;
+  --button-color: #124975;
+  --button-color-secondary: #352429;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-color-main: #000000;
+  --text-color-secondary: #ffffff;
+  --text-color-gray: #787878;
+  --text-color-blue: #1c2144;
+  --text-color-darkbrown:#473339;
+  --text-color-brown: #524347;
+  --heading-color-main: #124975;
+  --heading-color-secondary: #352429;
+}
+
+* {
+  margin: 0;
+}
+
+.loading {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  padding: 20%;
+}
+
+.loading .loading__circle {
+  width: 6.25vh;
+  height: 6.25vh;
+  border-radius: 50%;
+  border: 5px solid #124975;
+  border-top-color: transparent;
+  animation: loading 1s infinite;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  transform: none;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,263 @@
+.checkout {
+  width: 100%;
+}
+
+.checkout__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 2.9375rem;
+  padding: 3% 10% 5% 10%;
+  width: 80%;
+  text-align: center;
+}
+
+.checkout__container {
+  display: flex;
+  width: 100%;
+}
+
+.checkout__left {
+  padding: 0 2.5% 3% 15%;
+  width: 30%;
+}
+
+.checkout__left--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding-bottom: 3%;
+}
+
+.checkout__left--form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
+
+.checkout__left--form--item {
+  padding: 2% 0;
+}
+
+.checkout__left--form--item.cp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout__right {
+  padding: 0 15% 3% 2.5%;
+  width: 35%;
+}
+
+.checkout__right--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding-bottom: 3%;
+}
+
+.checkout__right--note {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  padding: 1% 0;
+}
+
+.checkout__right--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+  padding: 2% 2%;
+  height: 30vh;
+  overflow-y: auto;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+}
+
+.checkout__right--promo {
+  padding: 3% 0;
+}
+
+.checkout__right--promo--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  padding: 2% 0;
+}
+
+.checkout__right--promo--form {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+}
+
+.checkout__right--promo--input {
+  width: 75%;
+}
+
+.checkout__right--promo--button {
+  width: 20%;
+  background: #124975;
+  border-radius: 10px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: var(--white-color);
+  border: none;
+}
+
+.checkout__right--promo--button:hover {
+  background: #0a2a4a;
+}
+
+.checkout__right--bill {
+  padding: 2% 0;
+}
+
+.checkout__right--bill--item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.checkout__right--bill--item--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+  width: 70%;
+  padding: 1% 0 3% 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.checkout__right--bill--item--price {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.125rem;
+}
+
+.checkout__right--bill--button {
+  margin-top: 5%;
+  width: 100%;
+  background: #124975;
+  border-radius: 16px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.125rem;
+  padding: 5% 0;
+  color: var(--text-color-secondary);
+  text-align: center;
+  border: none;
+}
+
+.checkout__right--bill--button:hover {
+  background: #124975;
+}
+
+.checkout__right--box--item--delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 2%;
+  font-size: 1.5rem;
+  color: var(--text-color-secondary);
+  border: none;
+  background: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .checkout__container {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .checkout__left {
+    width: 80%;
+    padding: 0 10% 3% 10%;
+  }
+  .checkout__left--form {
+    padding-bottom: 8%;
+  }
+  .checkout__left--form--item {
+    padding: 4% 0;
+  }
+  .checkout__left--form--item.cp {
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .checkout__right {
+    width: 80%;
+    padding: 0 10% 3% 10%;
+  }
+  .checkout__right--box {
+    height: 100%;
+  }
+  .checkout__title {
+    font-size: 3.5rem;
+    line-height: 4.0625rem;
+  }
+  .checkout__left--title {
+    font-size: 3rem;
+    line-height: 2.9375rem;
+  }
+
+  .checkout__right--title {
+    font-size: 3rem;
+    line-height: 2.9375rem;
+  }
+
+  .checkout__right--promo--title {
+    margin-top: 10%;
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+  }
+
+  .checkout__right--promo--button {
+    font-size: 1.5rem;
+    padding-right: 1%;
+    width: 23%;
+    padding-left: 1%;
+  }
+
+  .checkout__right--bill {
+    margin-top: 8%;
+  }
+  .checkout__right--bill--item--title {
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+  }
+
+  .checkout__right--bill--item--price {
+    font-size: 2.5rem;
+    line-height: 2.3125rem;
+  }
+
+  .checkout__right--bill--button {
+    font-size: 2rem;
+    line-height: 2.3125rem;
+  }
+  .checkout__right--note {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,81 @@
+.wallet-history-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  width: 90%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.wallet-history-item__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.wallet-history-item__details--title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.wallet-history-item__details--amount {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.135rem;
+}
+
+.wallet-history-item__balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.wallet-history-item__balance--date {
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  font-weight: 390;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.wallet-history-item__balance--amount {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.135rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .wallet-history-item__details--title {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+  }
+
+  .wallet-history-item__details--amount {
+    font-size: 3rem;
+    line-height: 2.25rem;
+  }
+
+  .wallet-history-item__balance--date {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .wallet-history-item__balance--amount {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}

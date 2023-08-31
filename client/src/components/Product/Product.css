@@ -1,0 +1,341 @@
+.product {
+  width: 100%;
+}
+
+.product__info {
+  display: flex;
+  min-width: 100vh;
+  align-items: stretch;
+}
+
+.product__info--left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1% 10%;
+  background-color: var(--white-color);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+.product__info--left--image {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.product__info--left--image button {
+  outline: none;
+  border: none;
+  padding: 2% 3%;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.product__info--left--image button:disabled {
+  outline: none;
+  border: none;
+  padding: 2% 3%;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.product__info--left--image img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  padding: 0 2%;
+}
+
+.product__info--left--title {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding: 10% 0 3% 0;
+  color: var(--heading-color-secondary);
+  text-align: center;
+}
+.product__content--item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.product__content--item-type,
+.product__content--item-quantity {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  color: var(--heading-color-secondary);
+  margin-right: 2%;
+}
+
+.product__content--item img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.product__content--item button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+}
+.product__info--left--buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.product__info--left--buttons button {
+  outline: none;
+  cursor: pointer;
+  padding: 2% 8%;
+}
+
+.product__info--left--buttons--try {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--heading-color-secondary);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.product__info--left--buttons--try:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.product__info--left--buttons--buy {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  margin: 0 3%;
+}
+
+.product__info--left--buttons--buy:hover {
+  background-color: var(--secondary-color);
+}
+
+.product__info--left--buttons--subscribe {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: var(--heading-color-secondary);
+  border-radius: 5px;
+  border: none;
+}
+
+.product__info--left--buttons--subscribe:hover {
+  background-color: var(--secondary-color);
+}
+
+.product__info--right {
+  width: 60%;
+  padding: 1% 5% 3% 4%;
+  background-color: var(--tertiary-color);
+  color: var(--text-color-secondary);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+.product__info--right--title {
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  padding: 2% 0;
+}
+
+.product__info--right--info {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 1% 0;
+}
+
+.product__info--right--description--title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 2% 0;
+}
+
+.product__info--right--description--content {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 2% 0 2% 4%;
+}
+
+.product__info--right--benefits--title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 2% 0;
+}
+
+.product__info--right--benefits--list--item {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.5% 0 0.5% 0;
+}
+
+.product__mayAlsoLike {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 15%;
+  margin: 5% 0;
+}
+
+.product__mayAlsoLike--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 3%;
+  color: var(--text-color-primary);
+}
+
+.product__info--top--title,
+.mobile_view_buttons {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .product__info--left--title,
+  .webview_buttons,
+  .product__info--right--title,
+  .product__info--right--benefits {
+    display: none;
+  }
+
+  .product__mayAlsoLike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 5%;
+    margin: 12% 0;
+    width: 90%;
+  }
+
+  .product__mayAlsoLike--list {
+    width: 100%;
+  }
+
+  .product__mayAlsoLike--title {
+    font-size: 4.5rem;
+    margin-bottom: 0;
+  }
+
+  .product__info {
+    margin-top: 10%;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__info--top--title {
+    display: block;
+    font-size: 5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    padding: 3% 0;
+    color: var(--heading-color-secondary);
+    text-align: center;
+  }
+
+  .product__info--left {
+    width: 80%;
+    padding: 1% 10%;
+  }
+
+  .mobiile_view_buttons {
+    width: 90%;
+    display: block;
+  }
+
+  .product__info--left--buttons {
+    width: 100%;
+    font-size: 3rem;
+    padding: 8% 0;
+  }
+
+  .product__info--left--buttons--try {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0 2%;
+    line-height: 4rem;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .product__info--left--buttons--buy {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0 2%;
+    line-height: 4rem;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .product__info--left--buttons--subscribe {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0 2%;
+    line-height: 4rem;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  .product__info--right {
+    width: 80%;
+    padding: 1% 10%;
+    color: var(--tertiary-color);
+    background-color: var(--text-color-secondary);
+  }
+
+  .product__info--right--info {
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 2rem;
+    padding: 4% 0;
+  }
+
+  .product__info--right--description--title {
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 2rem;
+    padding: 10% 0 2% 0;
+  }
+
+  .product__info--right--description--content {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    padding: 2% 0 5% 0;
+  }
+}

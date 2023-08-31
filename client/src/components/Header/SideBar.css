@@ -1,0 +1,35 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 25vh;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1% 1%;
+  border-radius: 12px 0px 0px 12px;
+  z-index: 9997;
+}
+
+.side-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20% 0;
+}
+
+.side-bar__item--text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #efefef;
+}
+
+@media screen and (max-width: 1000px) {
+  .side-bar {
+    display: none;
+  }
+}

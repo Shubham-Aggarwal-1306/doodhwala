@@ -1,0 +1,220 @@
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 0 8% 0 0;
+  box-shadow: 0px 0px 1.0625rem 1px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.product-card__image {
+  width: 30%;
+  height: 40vh;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px 0 0 7px;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5% 0;
+  width: 65%;
+}
+
+.product-card__content--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--heading-color-secondary);
+  margin-bottom: 3%;
+}
+
+.product-card__content--description {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1;
+  color: var(--heading-color-secondary);
+  margin-bottom: 3%;
+}
+
+.product-card__content--item {
+  display: flex;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.product-card__content--item-type,
+.product-card__content--item-quantity {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--heading-color-secondary);
+  margin-right: 8%;
+}
+
+.product-card__content--item img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.product-card__content--item button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.product-card__content--buttons {
+  display: flex;
+  align-items: center;
+  min-width: 20%;
+  padding: 2% 0;
+}
+
+.product-card__content--order {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  padding: 1% 5%;
+  margin-right: 2%;
+  background-color: var(--button-color-secondary);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.product-card__content--order:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color-secondary);
+}
+
+/* Cause a ripple animation on click */
+.product-card__content--order:active {
+  background-color: var(--secondary-color);
+  color: var(--text-color-secondary);
+  transform: scale(0.98);
+}
+
+.product-card__content--cart {
+  border-radius: 4px;
+  padding: 1%;
+  background-color: #939393;
+  cursor: pointer;
+}
+
+.product-card__content--cart:hover {
+  background-color: #939393;
+}
+
+/* Cause a ripple animation on click */
+.product-card__content--cart:active {
+  background-color: #939393;
+  transform: scale(0.98);
+}
+
+.product-card__content--price, .product-card__content--size {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .product-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 5% 15% 5%;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .product-card__image {
+    width: 100%;
+  }
+
+  .product-card__image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-card__content {
+    width: 100%;
+    margin: 0;
+  }
+  .product-card__content--title {
+    font-size: 4rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .product-card__content--description {
+    display: none;
+  }
+  .product-card__content--buttons {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 2%;
+  }
+
+  .product-card__content--order {
+    font-size: 2.5rem;
+    border-radius: 10px;
+    padding: 4% 15%;
+  }
+
+  .product-card__content--cart {
+    padding: 3%;
+    border-radius: 10px;
+  }
+
+  .product-card__content--cart img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .product-card__content--price {
+    display: block;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    color: red;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  
+  .product-card__content--size {
+    display: block;
+    font-size: 2.5rem;
+    font-family: "Rubik", sans-serif;
+    color: #9D9D9D;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .product-card__content--item {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .product-card__content--item-type,
+  .product-card__content--item-quantity {
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  
+  .product-card__content--item img {
+    width: 3rem;
+    height: 3rem;
+  }
+}

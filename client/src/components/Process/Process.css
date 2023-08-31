@@ -1,0 +1,197 @@
+.process__hero {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 15%;
+  justify-content: flex-end;
+  height: 50vh;
+  background: url("../../Assets/ProcessHero.png");
+  background-repeat: no-repeat;
+}
+
+.process__hero__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.25rem;
+  line-height: 6.25rem;
+  color: var(--text-color-secondary);
+}
+
+.process__hero__breadcrumb {
+  color: var(--text-color-secondary);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+}
+
+.process__chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4% 15%;
+}
+
+.process__chart--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  background: #124975;
+  border-radius: 4px;
+  padding: 1% 2%;
+  color: var(--text-color-secondary);
+}
+
+.process__chart--flow {
+  display: flex;
+  padding: 4% 0 0 0;
+}
+
+.process__chart--flow img {
+  width: 100%;
+}
+
+.process__points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4% 15% 0 15%;
+}
+
+.process__points--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 4.4375rem;
+  padding: 1% 0;
+  color: var(--text-color-primary);
+}
+
+.process__points--description {
+  width: 70%;
+  padding: 1% 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #817d7d;
+}
+
+.process__points--list {
+  padding: 5% 0 0 0;
+  background: url("../../Assets/processPoints.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__points--list--item--left {
+  display: flex;
+  width: 50%;
+  min-height: 20vh;
+  padding: 2% 4% 2% 2%;
+  align-items: center;
+  background: #50a8dc;
+  border-radius: 56px 56px 56px 0;
+  margin: 0 0 6% 0;
+  color: var(--text-color-secondary);
+}
+
+.process__points--list--item--right {
+  display: flex;
+  width: 50%;
+  min-height: 20vh;
+  padding: 2% 2% 2% 4%;
+  align-items: center;
+  background: #50a8dc;
+  border-radius: 56px 56px 0px 56px;
+  margin: 0 0 6% 0;
+  margin-left: auto;
+  color: var(--text-color-secondary);
+}
+
+.process__points--list--item--number {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.75rem;
+  padding: 0 2%;
+}
+
+.process__points--list--item--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.process__points--list--item--left > .process__points--list--item--content {
+  text-align: left;
+}
+
+.process__points--list--item--right > .process__points--list--item--content {
+  text-align: right;
+}
+
+.process__points--list--item--content--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  padding-bottom: 2%;
+}
+
+.process__points--list--item--content--description {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.process__delivery {
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .process__hero {
+    height: 20vh;
+  }
+  .process__chart {
+    padding: 15% 5% 5% 5%;
+  }
+  .process__chart--title {
+    font-size: 0.7rem;
+    padding: 1% 8%;
+  }
+  .process__points {
+    padding: 20% 8% 0 8%;
+  }
+  .process__points--title {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    width: 100%;
+  }
+  .process__points--description {
+    width: 100%;
+    padding: 5% 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .process__points--list {
+    background: none;
+  }
+  .process__points--list--item--left {
+    width: 92%;
+  }
+  .process__points--list--item--right {
+    width: 92%;
+  }
+  .process__points--list--item--content--title {
+    padding-bottom: 4%;
+  }
+}

@@ -1,0 +1,209 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/*Left Side of Auth Screen*/
+.auth__left {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 10% 5vh 15%;
+  width: 25%;
+  height: 90vh;
+}
+
+.auth--heading {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.25rem;
+  line-height: 3.875rem;
+  margin: 5% 0 2% 0;
+  color: var(--tertiary-color);
+}
+
+.auth__form--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.auth__form--or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7% 0 5% 0;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-gray);
+}
+
+.auth__form--input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+  margin: 4% 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: var(--white-color);
+}
+
+.auth__form--input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: #000000;
+  padding-left: 5%;
+  border-radius: 6px;
+  background-color: var(--white-color);
+}
+
+.auth__form--input select {
+  width: 90%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: #000000;
+  padding-left: 5%;
+}
+
+
+
+.auth__form--input input:focus {
+  outline: none;
+}
+
+.auth__form--input select:focus {
+  outline: none;
+}
+
+
+.auth__form--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+  margin: 4% 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.auth__form--button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: var(--tertiary-color);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+/*Right Side of Auth Screen*/
+.auth__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--tertiary-color);
+}
+
+.auth__right img {
+  width: 100%;
+}
+
+.auth__right--text {
+  margin: 5% 10% 0 10%;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  color: var(--text-color-secondary);
+}
+
+.loadScreen {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(80, 168, 220, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .auth {
+    flex-direction: column;
+  }
+
+  .auth__left {
+    width: 80%;
+    height: 90vh;
+    padding: 5vh 10% 5vh 10%;
+  }
+
+  .auth__form--input input {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .auth__form--button button {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .auth__form--input select {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .auth__form--or {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .auth--heading {
+    font-size: 5rem;
+    margin: 10% 0 5% 0;
+  }
+
+  .auth__right {
+    display: none;
+  }
+}

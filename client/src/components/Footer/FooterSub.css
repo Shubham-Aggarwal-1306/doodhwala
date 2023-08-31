@@ -1,0 +1,53 @@
+.footer-sub__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #124975;
+  padding: 1% 20%;
+}
+
+.footer-sub__text {
+  font-family: "ColorTube", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  color: var(--text-color-secondary);
+}
+
+.footer-sub__download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 4% 0.5% 2%;
+  border-radius: 6px;
+  background-color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer-sub__download:hover {
+  background-color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer-sub__download--text--small {
+  font-family: "Cormorant", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  color: var(--text-color-main);
+}
+
+.footer-sub__download--text--large {
+  font-family: "Cormorant", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: var(--text-color-main);
+}
+
+@media screen and (max-width: 1000px){
+  .footer-sub__container {
+    display: none;
+  }
+}

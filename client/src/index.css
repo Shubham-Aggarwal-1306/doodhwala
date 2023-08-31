@@ -1,0 +1,5 @@
+/* Set z-index of Toast Container to 10000 */
+
+.Toastify__toast-container {
+  z-index: 9999;
+}

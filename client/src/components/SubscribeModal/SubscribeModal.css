@@ -1,0 +1,101 @@
+.subscribe-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-modal__header {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 4% 0;
+  color: var(--heading-color-secondary);
+}
+
+.subscribe-modal__body form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-modal__body--input label {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding: 2% 0;
+  color: var(--text-color-darkbrown);
+}
+
+.subscribe-modal__body--input--amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--text-color-darkbrown);
+  margin: 4% 0;
+}
+
+.subscribe-modal__body--input--amount button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 20%;
+}
+
+.subscribe-modal__body--input--amount input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+
+.subscribe-modal__body--button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 2% 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--text-color-darkbrown);
+}
+
+@media screen and (max-width: 1000px) {
+  .subscribe-modal__header {
+    font-size: 7.5rem;
+  }
+
+  .subscribe-process {
+    font-size: 3.375rem;
+  }
+  .subscribe-modal__body--button {
+    font-size: 3.375rem;
+    border: 3px solid var(--text-color-darkbrown);
+  }
+  .subscribe-modal__body--input--amount {
+    border: 3px solid var(--text-color-darkbrown);
+  }
+  .subscribe-modal__body--input--amount input {
+    font-size: 4.5rem;
+  }
+
+  .subscribe-modal__body--input--amount button {
+    font-size: 4.5rem;
+  }
+
+  .subscribe-modal__body--input label {
+    font-size: 3.375rem;
+  }
+}

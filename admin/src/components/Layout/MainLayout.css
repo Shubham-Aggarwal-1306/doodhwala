@@ -1,0 +1,18 @@
+.ant-layout-sider-children{
+    background-color: var(--secondary)
+}
+.ant-menu {
+    background-color:  var(--secondary)
+}
+
+.ant-layout-sider-trigger {
+    background-color: var(--primary) !important;
+}
+
+.ant-menu-item-selected {
+    background-color: var(--tertiary) !important;
+}
+
+.Logout:hover{
+    cursor: pointer;
+}

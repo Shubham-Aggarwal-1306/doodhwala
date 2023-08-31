@@ -1,0 +1,239 @@
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 4% 15%;
+}
+
+.home-hero__left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.home-hero__left--title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.home-hero__left--title--one {
+  color: #6b4041;
+}
+
+.home-hero__left--title--two {
+  color: #124975;
+}
+
+.home-hero__left--description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  color: #443737;
+  padding: 3% 0 10% 0;
+}
+
+.home-hero__left--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 2% 0;
+  height: 2.5rem;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  color: var(--text-color-secondary);
+}
+
+.home-hero__left--button:active {
+  color: var(--white-color);
+  transform: scale(0.98);
+}
+.home-hero__left--button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+}
+
+.home-hero__left--button a:hover {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.home-hero__left--features {
+  display: flex;
+  width: 100%;
+}
+
+.home-hero__left--features--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-hero__left--features--item--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-hero__left--features--item--icon img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.home-hero__left--features--item--text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  padding: 0 10%;
+  text-align: center;
+  color: #50a8dc;
+}
+
+.home-hero__right {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.home-hero__right--image {
+  position: absolute;
+  margin-left: 5%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.home-hero__right--image img {
+  width: 85%;
+  object-fit: contain;
+  object-position: contain;
+}
+
+.home-hero__right--buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 0 0 5%;
+  width: 95%;
+}
+
+.home-hero__right--buttons button {
+  padding: 3% 10%;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  color: var(--text-color-secondary);
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.home-hero__right--buttons button:active {
+  color: var(--white-color);
+  transform: scale(0.98);
+}
+
+.home-hero__right--buttons--button1 {
+  align-self: flex-start;
+  margin-left: -20%;
+  margin-top: 10%;
+}
+
+.home-hero__right--buttons--button2 {
+  margin-right: -32%;
+  margin-bottom: 25%;
+  align-self: flex-end;
+}
+
+.home-hero__right--buttons--button3 {
+  align-self: flex-start;
+  margin-left: -12%;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-hero {
+    flex-direction: column;
+    width: 100%;
+    padding: 8% 0;
+  }
+
+  .home-hero__left {
+    width: 90%;
+    padding: 0 5%;
+  }
+
+  .home-hero__right {
+    width: 80%;
+    padding: 2% 10%;
+    margin-bottom: 10vh;
+  }
+  .home-hero__left--title {
+    font-size: 7rem;
+    line-height: 8rem;
+    width: 90%;
+  }
+  .home-hero__left--description {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 50%;
+  }
+
+  .home-hero__left--button {
+    width: 40%;
+    height: 5.5rem;
+    margin: 2% 0;
+  }
+
+  .home-hero__left--button a {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .home-hero__left--features {
+    display: none;
+  }
+
+  .home-hero__right--image {
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .home-hero__right--image img {
+    height: 100%;
+    width: 100%;
+  }
+  .home-hero__right--buttons button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .home-hero__right--buttons--button1 {
+    align-self: flex-end;
+    margin-top: -5%;
+  }
+
+  .home-hero__right--buttons--button2 {
+    margin: 5% 0 10% -12%;
+    align-self: flex-start;
+  }
+
+  .home-hero__right--buttons--button3 {
+    align-self: flex-end;
+    margin-right: -4%;
+  }
+}

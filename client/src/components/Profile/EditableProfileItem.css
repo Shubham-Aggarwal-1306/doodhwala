@@ -1,0 +1,78 @@
+.editable-profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.135rem;
+}
+
+.editable-profile-item__title {
+  width: 40%;
+}
+
+.editable-profile-item__input {
+  display: flex;
+  width: 70%;
+}
+
+.editable-profile-item__input input {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.135rem;
+  text-align: left;
+  width: 100%;
+}
+
+.editable-profile-item__input input:disabled {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    text-align: left;
+    font-weight: 200;
+    color: black;
+    background: none;
+    border: 2px solid white;
+}
+
+.editable-profile-item__input button {
+  background: none;
+  border: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .editable-profile-item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 2.2rem;
+    line-height: 5rem; 
+  }
+
+  .editable-profile-item__input {
+    display: flex;
+    width: 100%;
+  }
+
+  .editable-profile-item__title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  .editable-profile-item__input input {
+    font-size: 2.3rem;
+    line-height: 2.75rem;
+    margin-bottom: 5%;
+  }
+
+  .editable-profile-item__input svg{
+    width: 2rem;
+    height: 2rem;
+  }
+}

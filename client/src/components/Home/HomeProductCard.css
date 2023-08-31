@@ -1,0 +1,220 @@
+.home-product-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-product-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 100%;
+  height: 16rem;
+  margin-bottom: 1%;
+  background-color: var(--tertiary-color);
+}
+
+.home-product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.home-product-card__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 1% 0 1%;
+}
+
+.home-product-card__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+}
+
+.home-product-card__price {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 26px;
+  /* or 153% */
+
+  text-align: center;
+
+  color: #ca2b1f;
+}
+
+.home-product-card__size {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #b2adc5;
+  padding: 1% 1% 0 1%
+}
+
+.home-product-card__content--item {
+  display: flex;
+  align-items: center;
+  margin: 5% 0 0 0;
+  justify-content: space-between;
+  padding: 1% 3% 2% 3%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.home-product-card__content--item-type,
+.home-product-card__content--item-quantity {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.135rem;
+  color: var(--heading-color-secondary);
+}
+
+.home-product-card__content--item img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.home-product-card__content--item button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 2%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-product-card__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+}
+
+.home-product-card__buttons button {
+  outline: none;
+  cursor: pointer;
+  padding: 3% 8%;
+  font-weight: 700;
+}
+
+.home-product-card__buttons--try {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--heading-color-secondary);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.home-product-card__buttons--try:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.home-product-card__buttons--buy {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+}
+
+.home-product-card__buttons--buy:hover {
+  background-color: var(--secondary-color);
+}
+
+.home-product-card__buttons--subscribe {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.135rem;
+  color: var(--text-color-secondary);
+  background-color: var(--heading-color-secondary);
+  border-radius: 5px;
+  border: none;
+}
+
+.home-product-card__buttons--subscribe:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .home-product-card {
+    margin: 2.5% 0;
+  }
+
+  .home-product-card__image {
+    height: 25rem;
+  }
+
+  .home-product-card__title {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__price {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__size {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 8% 0 15% 0;
+  }
+
+  .home-product-card__buttons button {
+    padding: 2% 5%;
+    margin: 0 1%;
+  }
+
+  .home-product-card__buttons--try {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__buttons--buy {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__buttons--subscribe {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .home-product-card__content--item {
+    margin: 5% 0 15% 0;
+    padding: 3% 5%;
+    justify-content: space-between;
+  }
+
+  .home-product-card__content--item-type,
+  .home-product-card__content--item-quantity {
+    font-size: 2.5rem;
+  }
+
+  .home-product-card__content--item img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
