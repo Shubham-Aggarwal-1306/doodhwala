@@ -32,6 +32,9 @@ const Auth = () => {
         </div>
         <div className='auth__left'>
         <form className='auth__form' onSubmit={handleLogin}>
+          <div className='auth__form--default'>
+            ID: a1@gmail.com Pass: 123456
+          </div>
           <div className='auth__form--input'>
             <input type='text' placeholder='Email' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
